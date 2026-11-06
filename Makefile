@@ -2,12 +2,12 @@ CC = gcc
 CFLAGS = -Wall 
 
 
-all:
+all:    test
 	echo "Running make all "
 	$(CC) $(CFLAGS) hello-world.c -o hello 
 
-test: char-count.c  
+test:   hello-world.c 
         # Build test   
 	echo "Running make test "
 	$(CC) $(CFLAGS) hello-world.c -o hello 
-	./hello
+	./hello > out 
