@@ -4,6 +4,7 @@ CFLAGS = -Wall
 
 
 all:    test
+	$(CC) --version 
 	@echo
 	@echo "Running make all:"
 	$(CC) $(CFLAGS) hello-world.c -o hello 
