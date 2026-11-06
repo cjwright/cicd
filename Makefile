@@ -10,4 +10,4 @@ test:   hello-world.c
         # Build test   
 	echo "Running make test "
 	$(CC) $(CFLAGS) hello-world.c -o hello 
-	./hello > out 
+	./hello 
