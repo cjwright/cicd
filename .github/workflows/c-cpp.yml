@@ -18,6 +18,7 @@ jobs:
     - name: make
       run: |
         cat /etc/os-release
+        yum -y install gcc 
         yum -y install make 
         make 
       
