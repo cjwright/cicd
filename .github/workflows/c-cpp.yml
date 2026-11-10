@@ -19,5 +19,5 @@ jobs:
       run: |
         cat /etc/os-release
         yum -y install make 
-        which make 
+        make 
       
