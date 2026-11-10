@@ -17,4 +17,4 @@ jobs:
     - uses: actions/checkout@v4
     - name: make
       run: cat /etc/os-release
-      run: make
+      
