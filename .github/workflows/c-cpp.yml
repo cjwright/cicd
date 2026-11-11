@@ -11,14 +11,13 @@ jobs:
 
     runs-on: ubuntu-latest
     container:
-      image: debian:12
+      image: debian
 
     steps:
     - uses: actions/checkout@v4
     - name: make
       run: |
         cat /etc/os-release
-        add-apt-repository -y main 
-        apt install tmux
+        apt install -y tmux
         make 
       
