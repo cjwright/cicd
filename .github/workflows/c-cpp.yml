@@ -18,7 +18,7 @@ jobs:
     - name: make
       run: |
         cat /etc/os-release
-        apt install gcc 
+        apt install build-essential
         apt install make
         make 
       
