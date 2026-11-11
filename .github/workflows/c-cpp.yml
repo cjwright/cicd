@@ -9,10 +9,16 @@ on:
 jobs:
   build:
 
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
+    container:
+      image: debian/bookworm:12
 
     steps:
     - uses: actions/checkout@v4
     - name: make
-      run: make 
-       
+      run: |
+        cat /etc/os-release
+        yum -y install gcc  g++
+        yum -y install make 
+        make 
+      
