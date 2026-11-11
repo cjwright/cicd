@@ -9,16 +9,10 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
-    container:
-      image: rockylinux/rockylinux:9
+    runs-on: debian-latest
 
     steps:
     - uses: actions/checkout@v4
     - name: make
-      run: |
-        cat /etc/os-release
-        yum -y install gcc  g++
-        yum -y install make 
-        make 
+      run: make 
       
