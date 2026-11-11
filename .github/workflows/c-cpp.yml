@@ -19,5 +19,6 @@ jobs:
       run: |
         cat /etc/os-release
         apt-get -y update 
+        apt-get install -y build-essential 
         make 
       
