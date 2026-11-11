@@ -18,6 +18,7 @@ jobs:
     - name: make
       run: |
         cat /etc/os-release
+        apt update
         apt install tmux
         make 
       
